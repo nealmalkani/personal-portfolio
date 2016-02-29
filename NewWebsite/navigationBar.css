@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Top-Level Navigation
+=================================================*/
+
+.nav-container{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  width:900px;
+}
+
+.nav-item-resume {
+	display: block;
+	float:left;
+	border-bottom: 5px solid #bf1e2e;
+	width:225px;
+}
+
+.nav-item-resume .nav-link-text{
+	color: #bf1e2e;
+	font-weight:200;
+	line-height:1.4em;
+}
+
+.nav-item-about {
+	display: block;
+	float:left;
+	border-bottom: 5px solid #f7941d;
+	width:225px;
+}
+
+.nav-item-about .nav-link-text{
+	color: #f7941d;
+	font-weight:200;
+	line-height:1.4em;
+}
+
+.nav-item-portfolio {
+	display: block;
+	float:left;
+	border-bottom: 5px solid #662e91;
+	width:225px;
+}
+
+.nav-item-portfolio .nav-link-text{
+	color: #662e91;
+	font-weight:200;
+	line-height:1.4em;
+}
+
+.nav-item-contact {
+	display: block;
+	float:left;
+	border-bottom: 5px solid #26aaac;
+	width:225px;
+}
+
+.nav-item-contact .nav-link-text{
+	color: #26aaac;
+	font-weight:200;
+	line-height:1.4em;
+}
+
+.nav-link {
+  display: block;
+  text-align:center;
+  padding-bottom: 5px;
+  color: #1c1c1c;
+  opacity: 1 !important;
+  text-decoration: none;
+}
+
+.nav-link-text{
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.nav-folder-link-text{
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.active-link .nav-link-text,
+.active-link .nav-folder-link-text {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.active-folder .nav-folder-toplevel-link .nav-link-text {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+li{
+	padding:0;
+}
+
+/* Folder Navigation
+=================================================*/
+.nav-folder {
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.nav-folder:hover .nav-folder-list,
+.nav-folder:active .nav-folder-list,
+.nav-folder-container:hover .nav-folder-list,
+.nav-folder-container:active .nav-folder-list {
+  display: block;
+  z-index: 9999;
+}
+
+.nav-folder-toplevel-link {
+  cursor: default;
+  display:block;
+}
+.nav-folder-toplevel-link:hover {
+  opacity: 1;
+}
+.nav-folder-toplevel-link:before {
+  content: '+';
+  margin-right: .25em;
+  color: #662e91;
+}
+.hide-folder-indicators .nav-folder-toplevel-link:before {
+  content: none;
+  margin-right: 0;
+}
+.nav-folder-container {
+	display:none;
+	
+  position: absolute;
+  left: 40%;
+  margin-left: -90px;
+  z-index: 9999;
+  
+}
+
+.nav-folder-toplevel-link:hover .nav-folder-container,
+.nav-folder:hover .nav-folder-container{
+	display:block;
+	z-index: 9999;
+}
+
+.nav-folder-list {
+  display: none;
+  list-style-type: none;
+  position: relative;
+  width: 225px;
+  margin-top: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.nav-folder-list:before,
+.nav-folder-list:after {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  margin-left: -8px;
+  border-right: 8px solid transparent !important;
+  border-left: 8px solid transparent !important;
+}
+
+.nav-folder-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #662e91;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+}
+
+.nav-folder-item:last-child {
+  margin-bottom: 0;
+}
+
+.nav-folder-link {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-folder-link:hover {
+  opacity: 1;
+}
+
+.nav-folder-item:last-child .nav-folder-link {
+  border-bottom: none;
+}
+
+.active-link .nav-folder-link-text {
+  opacity: .4;
+  border-color: transparent;
+}
+.nav-folder-alt-style-mixin .nav-folder-list {
+  margin-top: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(29, 29, 29, .1);
+}
+.nav-folder-alt-style-mixin .nav-folder-list:before {
+  top: -12px;
+  border-color: #fff;
+}
+.nav-folder-alt-style-mixin .nav-folder-item {
+  background-color: #fff;
+}
+.nav-folder-alt-style-mixin .nav-folder-link {
+  color: #1c1c1c;
+  border-color: rgba(29, 29, 29, .1);
+}

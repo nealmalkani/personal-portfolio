@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin: 0 auto;
+}
+
+.home{
+	background:url(images/bg-peeps.jpg);
+	background-repeat:repeat-y;
+	width:900px;
+	height:1000px;
+	margin: 0 auto;
+}
+
+.homeLinkBar{
+	background:#FFF;
+	width:900px;
+	height:auto;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+	font-weight:bold;
+	z-index:6;
+}
+
+.topSpacer{
+	height:20px;
+}
+
+.logoContainer{
+	margin: 0 auto;
+	text-align:center;
+}
+
+.bodyContainer{
+	margin: 0 auto;
+	text-align:center;
+	width:820px;
+	height:auto;
+}
+
+.formContainer{
+	margin: 0 auto;
+	text-align:center;
+	width:750px;
+}
+
+.resumeContainer{
+	width:100%;
+	background-color:#f3f3f3;
+	padding:30px 0px;
+	text-align:center;
+}
+
+.resumeBody{
+	width:816px;
+	margin:0 auto;
+}
+
+.resumePrint-Downlaod{
+	width:816px;
+	text-align:right;
+	line-height:1.6em;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	color:#bf1e2e;
+}
+
+.resumePrint-Downlaod a{
+	line-height:1.6em;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	color:#bf1e2e;
+	text-decoration:none;
+}
+
+.meImage{
+	width:300;
+	float:left;
+	padding-top:10px;
+	margin: 0 auto;
+}
+
+.aboutTitle{
+	width:500px;
+	float:left;
+	padding-top:10px;
+	padding-left:50px;
+	padding-bottom:10px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+	font-size:40px;
+	color:#f7941d;
+	text-align:left;
+}
+
+.aboutContent{
+	width:500px;
+	float:left;
+	text-align:justify;
+	padding-top:10px;
+	padding-left:50px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:14px;
+}
+
+.portfolioHeader{
+	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+	color:#A1A0A0;
+	font-size:28px;
+	text-align:left;
+	padding-left:40px;
+	padding-bottom:3px;
+}
+
+.portfolioSubHeader{
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	color:#A1A0A0;
+	font-size:16px;
+	text-align:left;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+.portfolioSubHeader a{
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	color:#A1A0A0;
+	font-size:16px;
+	text-align:left;
+	text-decoration:underline;
+}
+
+.contactTitle{
+	width:750px;
+	float:left;
+	text-align:center;
+}
+
+.formWrapper{
+	width:730px;
+	float:left;
+	text-align:left;
+	padding: 10px 20px;
+}
+
+.formText{
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+.fsNameContainer{
+	float:left;
+	width:40em;
+	padding-bottom:20px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsEmailContainer{
+	float:left;
+	width:40em;
+	padding-bottom:20px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsMessageContainer{
+	float:left;
+	width:40em;
+	padding-bottom:20px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsCommentContainer{
+	float:left;
+	width:40em;
+	padding-bottom:20px;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsSubmitButton
+{
+	border-top:		2px solid #26aaac;
+	border-left:		2px solid #26aaac;
+	border-right:		2px solid #26aaac;
+	border-bottom:		2px solid #26aaac;
+	padding:		5px 25px !important;
+	font-size:		14px !important;
+	background-color:	#26aaac;
+	font-weight:		200;
+	color:			#FFFFFF;
+}
+
+.fsNameField{
+	width:40em; 
+    border-radius:2px; 
+    border: solid 1px #26aaac; 
+    padding:0.4em; 
+    background-color: #FFFFFF; 
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsEmailField{
+	width:40em;
+    border-radius:2px;
+    border: solid 1px #26aaac;
+    padding:0.4em;
+    background-color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsMessageField{
+	width:40em; 
+    border-radius:2px;
+    border: solid 1px #26aaac;
+	padding-top:5px;
+	padding-bottom:10em;
+	padding-left:5px;
+	padding-right:5px;
+    background-color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}
+
+.fsCommentField{
+	width:40em; 
+    border-radius:2px; 
+    border: solid 1px #26aaac; 
+    padding-top:5px;
+	padding-bottom:5em;
+	padding-left:5px;
+	padding-right:5px; 
+    background-color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 300;
+	font-size:18px;
+}

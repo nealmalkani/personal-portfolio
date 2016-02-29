@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	margin: 0;
+	background-color:#8e0909;
+}
+
+
+.header{
+	background-color:#f3e4da;
+	height:130px;
+}
+
+.content{
+	background-color:#8e0909;
+	height:590px;
+}
+
+.contentText{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#f3e4da;
+	line-height:1.4;
+	text-align:center;
+}
+
+.footer{
+	background-color:#f3e4da;
+	height:150px;
+}
+
+.footerText{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#8e0909;
+	line-height:1.5;
+	text-align:center;
+}
+
+.bottomLine{
+	background-color:#8e0909;
+	height:5px;
+}
+
+.contactIcon{
+	width:19px;
+	height:19px;
+}

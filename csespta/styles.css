@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.title1 {
+	font-size: 36px;
+	color: #0F75BC;
+}
+.style2 {
+	font-size: 22px;
+	color: #0F75BC;
+}
+.background{
+background-image:url(Images/bg.gif);
+background-repeat:repeat-x;
+	 
+}	
+.title2 {
+	font-family: Georgia, "Times New Roman", Times, serif
+}
+.pageBody { font-family:Arial, Helvetica, sans-serif; font-size: 13px; }
+
+.style14 {font-size: 14px}
+
+.style16 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; font-weight: bold; }
+
+.style17 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+}
+.pageHead { font-family:Arial, Helvetica, sans-serif; font-size: 14px; }
+
+.pageBodyBold { font-family:Arial, Helvetica, sans-serif; font-size: 13px; font-weight:bold; }

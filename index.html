@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, width=device-width"/>
+	<title>Neal Malkani</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancyBox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'fade',
+				nextEffect : 'fade',
+
+				closeBtn  : false,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 100,
+						height : 100
+					}
+				}
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+<script type="text/javascript">
+	function scrollToTwo(id){
+		$('html,body').animate({
+				scrollTop: $(".pageTwo").offset().top},
+				'slow');
+	}
+</script>
+<div class="container">
+	<div class="pageOne">
+			<div class="icons">
+				<a href="https://www.linkedin.com/in/neal-malkani-babaa864"><img src="newImages/linkedin-icon.png" /></a>
+				<a href="https://github.com/nealmalkani"><img src="newImages/github-icon.png" /></a>
+			</div>
+			<div class="neal">neal.</div><!-- /title-->
+			<div class="down-arrow"><a href="#" onclick="scrollToTwo(this)"><img src="newImages/arrowDown.png" /></a></div><!-- /down-arrow-->
+	</div><!-- /pageOne-->
+	<div class="pageTwo">
+			<div class="title">experience</div><!-- /title-->
+			<div class="work-exp">
+				<div class="work-item"><div class="expIcon"><img src="newImages/cc-exp.png" /></div><div class="expDesc">Capital One<br />Software Engineer<br />2015 - now</div></div>
+				<div class="work-item"><div class="expIcon"><img src="newImages/car-exp.png" /></div><div class="expDesc">General Motors<br />Information Technology Intern<br />Summer of 2014</div></div>
+				<div class="work-item"><div class="expIcon"><img src="newImages/data-exp.png" /></div><div class="expDesc">Orchestro<br />QA/Development Intern<br />Summer of 2013</div></div>
+			</div>
+			<hr /><hr /><hr />
+			<div class="exp-horizontal">
+				<div class="exp-item"><div class="expDesc">Freelance<br />Web Designer & Developer</div></div>
+				<div class="exp-item"><div class="expDesc">Engineering Ambassadors<br />Technology Chair of Alumni Committee & Former Member</div></div>
+				<div class="exp-item"><div class="expDesc">Study Abroad in China<br />Engineering Design</div></div>
+			</div>
+			<div class="me-image">
+				<img src="newImages/me-conv.png" />
+			</div>
+	</div><!-- /pageTwo-->
+	<div class="pageThree">
+		<div class="title">photography</div><!-- /title-->
+			<!-- Body: All images -->
+	    <div class="slideshowContent">
+				<div class="photographyColumn">
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/3-b.jpg"><img src="fancyBox/images/3-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/18-b.jpg"><img src="fancyBox/images/18-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/5-b.jpg"><img src="fancyBox/images/5-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/24-b.jpg"><img src="fancyBox/images/24-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/2-b.jpg"><img src="fancyBox/images/2-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/15-b.jpg"><img src="fancyBox/images/15-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/14-b.jpg"><img src="fancyBox/images/14-s.jpg" alt="" /></a>
+				</div><!--/photographyColumn-->
+				<div class="photographyColumn">
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/7-b.jpg"><img src="fancyBox/images/7-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/22-b.jpg"><img src="fancyBox/images/22-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/20-b.jpg"><img src="fancyBox/images/20-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/8-b.jpg"><img src="fancyBox/images/8-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/23-b.jpg"><img src="fancyBox/images/23-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/17-b.jpg"><img src="fancyBox/images/17-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/4-b.jpg"><img src="fancyBox/images/4-s.jpg" alt="" /></a>
+				</div><!--/photographyColumn-->
+				<div class="photographyColumn">
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/21-b.jpg"><img src="fancyBox/images/21-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/19-b.jpg"><img src="fancyBox/images/19-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/9-b.jpg"><img src="fancyBox/images/9-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/10-b.jpg"><img src="fancyBox/images/10-s.jpg" alt="" /></a>
+				  <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/16-b.jpg"><img src="fancyBox/images/16-s.jpg" alt="" /></a>
+          <a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/12-b.jpg"><img src="fancyBox/images/12-s.jpg" alt="" /></a>
+					<a class="fancybox-thumbs" data-fancybox-group="thumb" href="fancyBox/images/11-b.jpg"><img src="fancyBox/images/11-s.jpg" alt="" /></a>
+				</div><!--/photographyColumn-->
+			</div><!--/slideshowContent-->
+	</div><!-- /pageThree-->
+</div>
+<!-- /container-->
+
+</body>
+</html>

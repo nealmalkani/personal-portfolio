@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, width=device-width"/>
+	<title>Neal Malkani</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+	<link media="only screen and (max-width:980px)" rel="stylesheet" type="text/css" href="css/tablet.css" />
+	<link media="only screen and (max-width:700px)" rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link media="only screen and (max-height:500px)" rel="stylesheet" type="text/css" href="css/smallHeight.css" />
+</head>
+
+<body>
+<div class="container">
+	
+    <div class="navBar">
+    	<div class="navInnerContainer">
+        	<div class="icon-menu">
+            	<img src="images/bars.gif">Menu
+            </div>
+        	<div class="navBarImg">
+        		<a href="index.html"><img src="images/logoBlue.gif"></a>
+            </div><!--/navBarImg-->
+            <div class="navBarName">
+                <p>Neal Malkani</p>
+            </div><!--/navBarName-->
+            <div class="navBarLinks">
+            	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html" class="onPage">Contact</a>
+            </div><!--/navBarLinks-->
+        </div><!--/navInnerContainer-->
+    </div><!--/navBar-->
+    
+    <div class="navBarHidden"></div><!--/navBarHidden-->
+    
+	<div class="header">
+		<div class="headerBackground">
+        	&nbsp;
+		</div><!-- /headerBackground-->
+        <div class="innerNav">
+        	<nav>
+            	<div class="icon-close">
+					<img src="images/close.png">
+				</div>
+				<ul>
+					<li class="border"><a href="portfolio.html">Portfolio</a></li>
+					<li class="border"><a href="photography.html">Photography</a></li>
+					<li class="border"><a href="aboutMe.html">About Me</a></li>
+					<li class="border" id="borderRightHidden"><a href="testimonials.html">Testimonials</a></li>
+                    <li class="border" id="mobileOnly"><a href="contact.html" class="onPage">Contact</a></li>
+                    
+				</ul>
+			</nav>
+        </div><!-- /innerNav-->
+	</div><!-- /header-->
+    
+    <div class="pageTitle" id="mobileOnly">Contact</div>
+    
+    <div class="content">
+    	<div class="formContainer">
+        	<form action="/gdform.php" method="post" class="formText">
+    			<input type="hidden" name="subject" value="Website Form Submission" />
+                <input type="hidden" name="redirect" value="thankYou.html"  />
+                <input type="hidden" name="email" value="nealm939@gmail.com" />
+                <div class="fsNameContainer">
+            		Name *<br /><input type="text" class="fsNameField" name="1Name" required>
+            	</div>
+                <div class="fsEmailContainer">
+                    E-mail *<br /><input type="text" name="2email" class="fsEmailField" required>
+                </div>
+                <div class="fsMessageContainer">
+                    Message *<br /><input type="text" name="3message" class="fsMessageField"required>
+                </div>
+                <div class="fsCommentContainer">
+                    Leave a Comment<br /><input type="text" name="4comments" class="fsCommentField">
+                </div>
+                <div class="fsCommentContainer">
+                    <input type="submit" class="fsSubmitButton" name="submit" value="submit" onClick="thankYou.html" /> 
+                </div>
+            </form>
+        </div><!--/aboutText-->
+    </div><!--/content-->
+	
+</div>
+<!-- /container-->
+
+<script src="jquery.min.js"></script>
+<script>
+		var main = function() {
+		  /* Push the body and the nav over by 285px over */
+		  $('.icon-menu').click(function() {
+			$('.innerNav').animate({
+			  left: "0px"
+			}, 200);
+
+			$('body').animate({
+			  left: "285px"
+			}, 200);
+		  });
+
+		  /* Then push them back */
+		  $('.icon-close').click(function() {
+			$('.innerNav').animate({
+			  left: "-285px"
+			}, 200);
+
+			$('body').animate({
+			  left: "0px"
+			}, 200);
+		  });
+		};
+		$(document).ready(main);
+</script>
+</body>
+</html>
