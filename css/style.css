@@ -200,6 +200,10 @@ only screen and (max-device-width : 599px){
   color: #000000;
 }
 
+.photography{
+	margin-bottom: 10px;
+}
+
 #myContent {
   -moz-column-count: 3;
   -moz-column-gap: 0px;
