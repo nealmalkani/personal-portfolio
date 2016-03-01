@@ -5,6 +5,7 @@ html, body {
 	margin:0;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+	font-size: 1em;
 }
 
 .container {
@@ -40,6 +41,17 @@ html, body {
   padding: 5px;
 }
 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+	.title{
+		font-size: 5em;
+	}
+	.icons img{
+		width: 60px;
+	  padding: 5px;
+	}
+}
+
 /* PAGE ONE */
 
 .pageOne{
@@ -67,6 +79,17 @@ html, body {
 	width: 50px;
 }
 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+  .neal{
+		font-size: 7em;
+		height: auto;
+	}
+	.down-arrow img{
+		width: 150px;
+	}
+}
+
 /* PAGE TWO */
 
 .pageTwo{
@@ -75,7 +98,7 @@ html, body {
 	width: 100%;
 	background-color:#5c2633;
   color: #FFFFFF;
-  font-size: 14pt;
+  font-size: 1.1em;
   line-height: 20pt;
 
 	justify-content: space-between;
@@ -106,10 +129,11 @@ html, body {
 .exp-date{
   width: 100%;
   text-align: right;
-  font-size: 12pt;
+  font-size: 1em;
 }
 
 .exp-horizontal{
+	margin: 10px 0px;
   display: flex;
   justify-content: space-around;
 	align-items: center;
@@ -128,6 +152,34 @@ html, body {
 .expIcon img{
   width: 25px;
   padding-right: 15px;
+}
+
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
+	.exp-horizontal{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+	.work-exp{
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+	.work-item{
+		width: 90%;
+	}
+
+	.exp-item{
+		font-size: 2em;
+		line-height: 2em;
+	}
 }
 
 /* PAGE THREE */
@@ -176,8 +228,8 @@ li{
   margin: 0;
 }
 
-@media only screen and (max-width : 1499px),
-only screen and (max-device-width : 1499px){
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
   #myContent {
     -moz-column-count: 2;
     -moz-column-gap: 0px;
@@ -188,13 +240,14 @@ only screen and (max-device-width : 1499px){
     width: 100%;
   }
 
-  #photography {
+  .photography {
     width: 100%;
+		margin-top: 40px;
   }
 }
 
-@media only screen and (max-width : 899px),
-only screen and (max-device-width : 899px){
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
   #myContent {
     -moz-column-count: 1;
     -moz-column-gap: 0px;
@@ -205,19 +258,8 @@ only screen and (max-device-width : 899px){
     width: 100%;
   }
 
-  #photography {
+  .photography {
     width: 100%;
+		margin-top: 40px;
   }
-
-  .exp-horizontal{
-    display: flex;
-    justify-content: space-around;
-  	align-items: center;
-  	flex-direction: column;
-    text-align: center;
-  }
-}
-
-.b{
-  border: 5px solid #000000;
 }
