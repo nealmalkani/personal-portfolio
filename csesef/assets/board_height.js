@@ -1,2 +1,0 @@
-
-document.observe("dom:loaded",function(){var bm=$("board_members");var bm_height=bm.offsetHeight-12;var rbm=$$(".right_board_members")[0];var rbm_h=rbm.offsetHeight-12;((bm_height>rbm_h)?rbm:bm).setStyle({paddingBottom:"0px",height:Math.max(bm_height,rbm_h)+"px"});});
