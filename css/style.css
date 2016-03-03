@@ -36,20 +36,17 @@ html, body {
 	flex-direction: column;
 }
 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+	.icons{
+		top: 10px;
+		right: 10px;
+	}
+}
+
 .icons img{
 	width: 30px;
   padding: 5px;
-}
-
-@media only screen and (max-width : 599px),
-only screen and (max-device-width : 599px){
-	.title{
-		font-size: 5em;
-	}
-	.icons img{
-		width: 60px;
-	  padding: 5px;
-	}
 }
 
 /* PAGE ONE */
@@ -77,17 +74,6 @@ only screen and (max-device-width : 599px){
 
 .down-arrow img{
 	width: 50px;
-}
-
-@media only screen and (max-width : 599px),
-only screen and (max-device-width : 599px){
-  .neal{
-		font-size: 7em;
-		height: auto;
-	}
-	.down-arrow img{
-		width: 150px;
-	}
 }
 
 /* PAGE TWO */
@@ -167,18 +153,8 @@ only screen and (max-device-width : 999px){
 
 @media only screen and (max-width : 599px),
 only screen and (max-device-width : 599px){
-	.work-exp{
-		font-size: 2em;
-		line-height: 2em;
-	}
-
 	.work-item{
 		width: 90%;
-	}
-
-	.exp-item{
-		font-size: 2em;
-		line-height: 2em;
 	}
 }
 
